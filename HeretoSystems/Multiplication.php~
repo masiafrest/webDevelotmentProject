@@ -1,0 +1,10 @@
+<?php
+
+$Multiplication1 = $_GET["Multiplication1"];
+$Multiplication2 = $_GET["Multiplication2"];
+
+$total = $Multiplication1 * $Multiplication2;
+
+echo $Multiplication1." * ".$Multiplication2." is = $total.";
+
+?>

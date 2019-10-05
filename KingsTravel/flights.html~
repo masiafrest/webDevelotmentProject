@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>King Travel and Tours - flights</title>
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Kings Travel and Tour</h1>
+	<form method=GET action="flights.php">
+	from:<br>
+	<input type="radio" name="countryFrom" value="1" checked>Panama<br>
+	<input type="radio" name="countryFrom" value="2">Costa Rica<br>
+	<input type="radio" name="countryFrom" value="3">Colombia<br>
+	<input type="radio" name="countryFrom" value="4">Chile<br>
+	<input type="radio" name="countryFrom" value="2">Costa Rica<br>
+	<input type="radio" name="countryFrom" value="3">Colombia<br>
+	<input type="radio" name="countryFrom" value="4">Chile<br>
+	to:<br>
+	<input type="radio" name="countryTo" value="1" checked>Panama<br>
+	<input type="radio" name="countryTo" value="2">Costa Rica<br>
+	<input type="radio" name="countryTo" value="3">Colombia<br>
+	<input type="radio" name="countryTo" value="4">Chile<br>
+	<input type="submit" value="calculate fare">
+	</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+input {
+    width: 90%;
+    padding-right: 10px;
+    
+    text-align: right;
+    font-style: italic;
+    font-family: monospace;
+}
+
+table {
+    table-layout: fixed;
+
+}
+
+button {
+    font-family: monospace;
+}

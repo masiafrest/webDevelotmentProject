@@ -1,0 +1,10 @@
+<?php
+
+$subtraction1 = $_GET["subtraction1"];
+$subtraction2 = $_GET["subtraction2"];
+
+$total = $subtraction1 - $subtraction2;
+
+echo $subtraction1." - ".$subtraction2." is = $total.";
+
+?>

@@ -1,0 +1,56 @@
+<html style="background-color:#E6E6E6;">
+<head>
+	<title> St. Peter Institute </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="h-100">
+	<nav class="navbar navbar-light navbar-expand-sm">
+		<a class="navbar-brand" href="Index.html"><h3>St. Peter School</h3></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar"><span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse" id="collapsingNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item ml-auto">
+					<a class="nav-link" href="Addmision.html">Addmision Test</a>
+				</li>
+				<li class="nav-item ml-auto">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="container mt-3 h-30">
+		<h3 class="text-center">Register</h3><br>
+	</div>
+		
+	<div class="mx-auto w-50 text-center ">
+		<form method="POST" action="logIn.php">
+			<div class="form-group">
+				<input type="email" class="form-control" name="email" placeholder="Enter Email">
+				<br>
+				<input type="password" class="form-control" name="password" placeholder="Enter password">
+				<br>
+				<input type="text" class="form-control" name="name" placeholder="Enter Name">
+				<br>
+				<input type="text" class="form-control" name="lastName" placeholder="Enter lastName">
+				<br>
+				<input type="text" class="form-control" name="grade" placeholder="Enter Grade">
+				<br>
+				<input type="text" class="form-control" name="phone" placeholder="Enter Phone">
+				<br>
+				<button class="btn btn-secondary" type="submit">Register</button>
+			</div>
+	</div>
+
+	<div class="footer bg-secondary pt-3">
+		<p class="text-center">St. Patrick School 2019</P>
+	</div>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

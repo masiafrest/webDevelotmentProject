@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>King Travel and Tours - flights</title>
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-light"> <!--bg-info es un color celeste claro de bootstrap -->
+	
+	<nav class="navbar navbar-dark bg-primary navbar-expand-md "> 
+		<a class="navbar-brand" href="index.html"><h3>Kings Travel</h3></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse " id="collapsingNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item ml-auto">
+					<a class="nav-link" href="flights.html">Flights</a>
+				</li>
+				<li class="nav-item ml-auto">
+					<a class="nav-link" href="availabilty.html">Availability</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container h-100 w-50 p-5">
+		<form method=GET action="flights.php">
+			from:<br>
+			<div class="mw-25">
+				<div class="form-group">
+					<select class="custom-select" name="countryFrom">
+						<option value="1" selected>Panama</option>
+						<option value="2">Costa Rica</option>
+						<option value="3">Colombia</option>
+						<option value="4">Chile</option>
+						<option value="11">Rusia</option>
+						<option value="3">España</option>
+						<option value="12">China</option>
+						<option value="5">Estados Unido</option>
+						<option value="6">Canada</option>
+						<option value="9">South Africa</option>
+					</select>
+				to:<br>
+					<select class="custom-select" name="countryTo">
+						<option value="1" selected>Panama</option>
+						<option value="2">Costa Rica</option>
+						<option value="3">Colombia</option>
+						<option value="4">Chile</option>
+						<option value="11">Rusia</option>
+						<option value="3">España</option>
+						<option value="12">China</option>
+						<option value="5">Estados Unido</option>
+						<option value="6">Canada</option>
+						<option value="9">South Africa</option>
+					</select>
+				<br>
+				<div class="text-center mt-4">
+					<button class="btn btn-primary" type="submit">calculate fare</button>
+				</div>
+		</form>
+		<p class="text-center mt-3">
+			<?php
+			$countryFrom = $_GET["countryFrom"];
+			$countryTo = $_GET ["countryTo"];
+			$fare = 0;
+			$fareTax5 = 0;
+			$fareTax10 = 0;
+
+			if ($countryFrom == $countryTo)
+			{
+				echo "can't be the same country, please try again<br>";
+			}
+			else if ($countryFrom !== $countryTo)
+			{
+				$fare = $countryFrom - $countryTo;
+				$fare = abs($fare * 750);
+				
+				if ($fare >= "2000")
+				{
+					$faretax10 = $fare * 0.10;
+					$fare = $fare + $faretTax10;
+					echo "this fare is greater than 2000.00 so the comision is 10% and the total is: B/.", number_format($fare,2);
+				}
+				else if($fare <= "1999.99")
+				{
+					$fareTax5 = $fare * 0.05;
+					$fare = $fare + $fareTax5;
+					echo "this fare is less than 1999.99 so the comision is 5% and the total is: B/.", number_format($fare,2);}
+			}
+			
+
+			?>
+		</p>
+	</div>
+	
+	<div class="footer fixed-bottom" style="background-color: dodgerblue">
+		<p class="text-center">Kings Travel 2019</p>
+	</div>
+		
+</body>
+</html>
+
